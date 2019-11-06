@@ -1,0 +1,51 @@
+.section-allabout {
+  grid-area: section-allabout;
+  background-color: $color-secondary;
+
+  &__content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    align-content: center;
+
+    &--item {
+      height: 100%;
+      flex: 0 0 25%;
+      font-size: 1rem;
+      color: $color-white;
+      transition: all 0.3s;
+
+      &--1 {
+        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/9.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--2 {
+        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/10.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--3 {
+        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/11.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--4 {
+        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/12.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      &:hover {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+  }
+}

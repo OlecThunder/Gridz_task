@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(mid) {
+    font-size: 68.75%; // 1rem = 9px now, 16px/9px = 56.25%
+  }
+
+  @include respond(mid-exeption) {
+    font-size: 75%; // 1rem = 8px now, 16px/8px = 50%
+  }
+
+  @include respond(big) {
+    font-size: 87.5%; // 1rem = 12px
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

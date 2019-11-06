@@ -1,0 +1,44 @@
+.nav {
+  grid-area: nav;
+  background-image: linear-gradient(to right bottom, rgba($color-primary, 0.5), rgba($color-primary, 0.8)), url(../img/16.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0.2rem;
+
+    &--item {
+      flex: 0 0 33%;
+      font-size: 0.9rem;
+
+      @include respond(mid) {
+        font-size: 1.5rem;
+      }
+
+      &--link:link,
+      &--link:visited {
+        text-decoration: none;
+        color: $color-white;
+        border-radius: 4rem;
+        transition: all 0.1s;
+      }
+
+      &--link:hover,
+      &--link:active {
+        border: 1px solid $color-grey-dark;
+        background-color: $color-secondary;
+        padding: 0.2rem;
+
+        @include respond(mid) {
+          padding: 0.5rem 1rem;
+        }
+
+      }
+    }
+  }
+}

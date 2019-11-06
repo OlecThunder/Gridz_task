@@ -1,0 +1,53 @@
+.grid-container {
+  display: grid;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  grid-gap: 0.1rem;
+  grid-template-rows: 0.25fr 5fr 1.5fr 1.5fr 2fr 2fr 2fr 4fr 2fr 2fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "section-activity section-activity"
+    "section-feature section-feature"
+    "section-allabout section-allabout"
+    "section-phone section-phone"
+    "section-trending section-trending"
+    "section-stories section-stories"
+    "section-join section-join"
+    "footer footer";
+
+  @include respond(mid) {
+    grid-template-rows: 0.2fr 2.5fr 0.9fr 1.5fr 1fr 1.2fr 2.5fr 1.2fr;
+    grid-template-columns: 1fr 2fr 2fr 3fr;
+    grid-template-areas:
+      "header nav nav nav"
+      "main main main main"
+      "section-activity section-activity section-feature section-feature"
+      "section-allabout section-allabout section-allabout section-join"
+      "section-phone section-phone section-phone null"
+      "section-trending section-trending section-trending null"
+      "section-stories section-stories section-stories null"
+      "footer footer footer footer";
+  }
+
+  @include respond(mid-exeption) {
+    grid-template-rows: 0.2fr 1.8fr 0.5fr 1.5fr 0.7fr 0.7fr 2fr 1.2fr;
+  }
+
+  @include respond(big) {
+    grid-template-rows: 0.2fr 1.5fr 1fr 1.3fr 1fr 1.2fr 2fr 0.8fr;
+    grid-template-columns: 1fr 1.5fr 1fr 1.5fr 3fr;
+    grid-template-areas:
+      "header nav nav nav nav"
+      "main main main main main"
+      "section-activity section-activity section-activity section-feature section-feature"
+      "section-allabout section-allabout section-allabout section-allabout section-join"
+      "section-allabout section-allabout section-allabout section-allabout null"
+      "section-phone section-phone section-trending section-trending null"
+      "section-stories section-stories section-stories section-stories null"
+      "footer footer footer footer footer";
+  }
+}

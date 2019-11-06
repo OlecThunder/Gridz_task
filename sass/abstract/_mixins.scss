@@ -1,0 +1,43 @@
+@mixin clearFix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//MEDIA QUERY MANAGER
+/*
+  0-360px:        Default
+  360-1024px:     mid
+  1024+ px:       big
+
+  ORDER: BASE + TYPOGRAPHY => GENERAL LAYOUT + GRID => PAGE LAYOUT => COMPONENTS 
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==mid {
+    @media(min-width: 22.5em) {
+      @content
+    }
+
+    ; // 360-1024px
+  }
+
+  @if $breakpoint==mid-exeption {
+    @media(min-width: 35.5em) {
+      @content
+    }
+
+    ; // 360-1024px
+  }
+
+  @if $breakpoint==big {
+    @media(min-width: 64em) {
+      @content
+    }
+
+    ; // 1024+px
+  }
+
+}
