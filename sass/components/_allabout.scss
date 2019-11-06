@@ -19,32 +19,24 @@
       transition: all 0.3s;
 
       &--1 {
-        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/9.jpg);
-        background-size: cover;
-        background-position: center;
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/9.jpg) center / cover;
       }
 
       &--2 {
-        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/10.jpg);
-        background-size: cover;
-        background-position: center;
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/10.jpg) center / cover;
       }
 
       &--3 {
-        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/11.jpg);
-        background-size: cover;
-        background-position: center;
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/11.jpg) center / cover;
       }
 
       &--4 {
-        background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/12.jpg);
-        background-size: cover;
-        background-position: center;
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/12.jpg) center / cover;
       }
 
       &:hover {
-        transform: scale(0.95);
-        opacity: 0.8;
+        transform: scale(.95);
+        opacity: .8;
       }
     }
   }

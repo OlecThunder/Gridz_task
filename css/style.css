@@ -34,7 +34,6 @@ body {
   color: #777; }
 
 .heading-secondary {
-  display: block;
   background-image: linear-gradient(to right, rgba(239, 171, 110, 0.6), rgba(191, 101, 22, 0.9));
   display: inline-block;
   background-clip: text;
@@ -209,9 +208,7 @@ body {
 .section-feature {
   grid-area: section-feature;
   height: 20rem;
-  background-image: linear-gradient(to right, rgba(239, 171, 110, 0.3), rgba(191, 101, 22, 0.3)), url(../img/5.jpg);
-  background-size: cover;
-  background-position: center; }
+  background: linear-gradient(to right, rgba(239, 171, 110, 0.3), rgba(191, 101, 22, 0.3)), url(../img/5.jpg) center/cover; }
 
 .feature {
   display: flex;
@@ -243,8 +240,7 @@ body {
 .section-activity {
   grid-area: section-activity;
   height: 20rem;
-  background-image: linear-gradient(to right, rgba(141, 174, 154, 0.6), rgba(141, 174, 154, 0.8)), url(../img/6.jpg);
-  background-size: cover;
+  background: linear-gradient(to right, rgba(141, 174, 154, 0.6), rgba(141, 174, 154, 0.8)), url(../img/6.jpg) center/cover;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative; }
   @media (min-width: 22.5em) {
@@ -329,24 +325,16 @@ body {
       color: #fff;
       transition: all 0.3s; }
       .section-allabout__content--item--1 {
-        background-image: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/9.jpg);
-        background-size: cover;
-        background-position: center; }
+        background: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/9.jpg) center/cover; }
       .section-allabout__content--item--2 {
-        background-image: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/10.jpg);
-        background-size: cover;
-        background-position: center; }
+        background: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/10.jpg) center/cover; }
       .section-allabout__content--item--3 {
-        background-image: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/11.jpg);
-        background-size: cover;
-        background-position: center; }
+        background: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/11.jpg) center/cover; }
       .section-allabout__content--item--4 {
-        background-image: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/12.jpg);
-        background-size: cover;
-        background-position: center; }
+        background: linear-gradient(to right, rgba(239, 171, 110, 0.4), rgba(191, 101, 22, 0.5)), url(../img/12.jpg) center/cover; }
       .section-allabout__content--item:hover {
         transform: scale(0.95);
-        opacity: 0.8; }
+        opacity: .8; }
 
 .section-phone {
   grid-area: section-phone;
@@ -391,15 +379,14 @@ body {
 
 .section-join {
   grid-area: section-join;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(../img/12.jpg);
-  background-size: cover;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(../img/12.jpg) top/cover;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25); }
   @media (min-width: 22.5em) {
     .section-join {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, transparent 50%), url(../img/12.jpg); } }
+      background: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, transparent 50%), url(../img/12.jpg) top/cover; } }
   @media (min-width: 64em) {
     .section-join {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(../img/12.jpg); } }
+      background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 50%), url(../img/12.jpg) top/cover; } }
   .section-join .btn {
     width: 70%;
     align-self: center; }
