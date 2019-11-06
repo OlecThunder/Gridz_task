@@ -1,9 +1,7 @@
 .section-feature {
   grid-area: section-feature;
   height: 20rem;
-  background-image: linear-gradient(to right, rgba($color-primary-light, 0.3), rgba($color-primary-dark, 0.3)), url(../img/5.jpg);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(to right, rgba($color-primary-light, 0.3), rgba($color-primary-dark, 0.3)), url(../img/5.jpg) center / cover;
 }
 
 .feature {

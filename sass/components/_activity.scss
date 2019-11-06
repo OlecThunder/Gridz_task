@@ -1,8 +1,7 @@
 .section-activity {
   grid-area: section-activity;
   height: 20rem;
-  background-image: linear-gradient(to right, rgba($color-secondary, 0.6), rgba($color-secondary, 0.8)), url(../img/6.jpg);
-  background-size: cover;
+  background: linear-gradient(to right, rgba($color-secondary, 0.6), rgba($color-secondary, 0.8)), url(../img/6.jpg) center / cover;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 
@@ -36,7 +35,7 @@
   }
 
   &__city {
-    background-color: #fff;
+    background-color: $color-white;
     opacity: 0.5;
     font-size: 2.8rem;
     text-transform: uppercase;
