@@ -1,0 +1,43 @@
+.section-allabout {
+  grid-area: section-allabout;
+  background-color: $color-secondary;
+
+  &__content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    align-content: center;
+
+    &--item {
+      height: 100%;
+      flex: 0 0 25%;
+      font-size: 1rem;
+      color: $color-white;
+      transition: all 0.3s;
+
+      &--1 {
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/9.jpg) center / cover;
+      }
+
+      &--2 {
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/10.jpg) center / cover;
+      }
+
+      &--3 {
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/11.jpg) center / cover;
+      }
+
+      &--4 {
+        background: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/12.jpg) center / cover;
+      }
+
+      &:hover {
+        transform: scale(.95);
+        opacity: .8;
+      }
+    }
+  }
+}

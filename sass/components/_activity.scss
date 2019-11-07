@@ -1,0 +1,57 @@
+.section-activity {
+  grid-area: section-activity;
+  height: 20rem;
+  background: linear-gradient(to right, rgba($color-secondary, 0.6), rgba($color-secondary, 0.8)), url(../img/6.jpg) center / cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  position: relative;
+
+  @include respond(mid) {
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  }
+
+  @include respond(mid-exeption) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 90%;
+
+    &--item {
+      font-size: 1.4rem;
+      font-weight: 400;
+
+      & span {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-tertuary;
+        padding: 0.5rem;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__city {
+    background-color: $color-white;
+    opacity: 0.5;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $color-primary;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 30%;
+
+    @include respond(mid) {
+      visibility: hidden;
+    }
+
+    @include respond(mid-exeption) {
+      visibility: visible;
+    }
+  }
+}

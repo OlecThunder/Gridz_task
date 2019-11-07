@@ -1,0 +1,31 @@
+.section-stories {
+  grid-area: section-stories;
+  background-image: linear-gradient(to right, rgba($color-primary-light, 0.4), rgba($color-primary-dark, 0.5)), url(../img/7.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
+  &__stories {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    color: $color-white;
+
+    &--item {
+      display: flex;
+      justify-content: space-around;
+      background-color: $color-grey-dark-3;
+      opacity: 0.75;
+
+      & img {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        align-self: center;
+      }
+    }
+  }
+}
